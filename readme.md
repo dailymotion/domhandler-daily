@@ -1,6 +1,8 @@
-#DOMHandler [![Build Status](https://secure.travis-ci.org/fb55/DomHandler.png)](http://travis-ci.org/fb55/DomHandler)
+#DOMHandler-Daily [![Build Status](https://secure.travis-ci.org/romainberger/DomHandler-daily.png)](http://travis-ci.org/romainberger/DomHandler-daily)
 
 The DOM handler (formally known as DefaultHandler) creates a tree containing all nodes of a page. The tree may be manipulated using the DOMUtils library.
+
+Custom version to handle Twig tags in elements.
 
 ##Usage
 ```javascript
@@ -47,7 +49,7 @@ Output:
 ```
 
 ##Option: normalizeWhitespace
-Indicates whether the whitespace in text nodes should be normalized (= all whitespace should be replaced with single spaces). The default value is "false". 
+Indicates whether the whitespace in text nodes should be normalized (= all whitespace should be replaced with single spaces). The default value is "false".
 
 The following HTML will be used:
 

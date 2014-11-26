@@ -86,11 +86,12 @@ DomHandler.prototype._addDomElement = function(element){
 	element.parent = parent || null;
 };
 
-DomHandler.prototype.onopentag = function(name, attribs){
+DomHandler.prototype.onopentag = function(name, attribs, twigTags){
 	var element = {
 		type: name === "script" ? ElementType.Script : name === "style" ? ElementType.Style : ElementType.Tag,
 		name: name,
 		attribs: attribs,
+		twigTags: twigTags,
 		children: []
 	};
 
